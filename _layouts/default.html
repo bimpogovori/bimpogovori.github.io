@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+		<div class="jumbotron">
+      <div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="/index.html"><img class="img-responsive" src="/images/bimpogovori-avatar.png"></a>
+					</div>
+					<div class="col-md-8">
+						<p class="lead m-t-md">
+          		Podcast v katerem se Matevž in Robert z gosti sproščeno pogovarjata o <strong>informacijskem modeliranju zgradb (BIM)</strong>
+          		in <strong>informacijsko-komunikacijskih tehnologijah</strong> v gradbeništvu.
+          	</p>
+
+          	<form class="validate form-inline" action="http://matevzdolenc.us10.list-manage.com/subscribe/post?u=c94cf7a2f54c20ef8b6e6dcf7&amp;id=8c14b732ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+
+          		<input type="email" value="" name="EMAIL" class="form-control m-b required email" id="mce-EMAIL" placeholder="e-poštni naslov">
+          		<input type="submit" value="Naroči se" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary m-b">
+
+          		<!-- <button class="btn btn-primary m-b">Subscribe</button> -->
+          		<div id="mce-responses" class="clear">
+             		<div class="response" id="mce-error-response" style="display:none"></div>
+             		<div class="response" id="mce-success-response" style="display:none"></div>
+          		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        		</form>
+
+						<p class="lead m-t-md">Na podcast se lahko naročite preko <a href="#">iTunes</a> ali <a href="#">RSS</a></p>
+        		
+					</div>
+				</div><!-- /.row -->
+
+      </div>
+    </div>
+    
+<!-- 
+    <div class="page-content">
+      <div class="wrap">
+      {{ content }}
+      </div>
+    </div>
+ -->
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+    </body>
+</html>
