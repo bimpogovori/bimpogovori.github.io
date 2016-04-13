@@ -27,7 +27,7 @@
 		</image>
 		<managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
 		<webMaster>{{ site.email }} ({{ site.author }})</webMaster>
-		<copyright>2016 - {{ site.title }}</copyright>
+		<copyright>{{ site.copyright }}</copyright>
 <!-- 
 		<copyright>2016-{{ site.time | "%Y" }} {{ site.title }}</copyright>
  -->

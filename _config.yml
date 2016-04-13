@@ -12,6 +12,7 @@ feed: "http://feeds.feedburner.com/bimpogovori"
 image: "http://bimpogovori.si/images/itunes.png"
 keywords: informacijsko,modeliranje,zgradb,informacijski,model,bim,komunikacijske,tehnologije 
 explicit: "no"
+copyright: "BIMpogovori.si"
 paginate: 5
 paginate_path: "/a/page:num"
 
