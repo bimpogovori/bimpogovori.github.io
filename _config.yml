@@ -1,16 +1,19 @@
 # Site settings
 title: BIMpogovori
-email: matevz@bimpogovori.si
-description: "Podcast v katerem se Matevž in Robert z gosti sproščeno pogovarjata o informacijskem modeliranju zgradb (BIM) in informacijsko-komunikacijskih tehnologijah</strong> v gradbeništvu."
+description: "Podcast v katerem se Matevž in Robert z gosti sproščeno pogovarjata o informacijskem modeliranju zgradb (BIM) in informacijsko-komunikacijskih tehnologijah v gradbeništvu."
+subtitle: "Podcast v katerem se Matevž in Robert z gosti sproščeno pogovarjata o informacijskem modeliranju zgradb (BIM) in informacijsko-komunikacijskih tehnologijah v gradbeništvu."
 lang: sl
-author: Matevž Dolenc
+author: Matevž Dolenc in Robert Klinc
+owner: Matevž Dolenc
+email: matevz@bimpogovori.si
 baseurl: ""
 url: "http://bimpogovori.si"
-paginate: 5
-paginate_path: "/a/page:num"
 feed: "http://feeds.feedburner.com/bimpogovori"
 image: "http://bimpogovori.si/images/itunes.png"
 keywords: informacijsko,modeliranje,zgradb,informacijski,model,bim,komunikacijske,tehnologije 
+explicit: clean
+paginate: 5
+paginate_path: "/a/page:num"
 
 # Build settings
 markdown: kramdown

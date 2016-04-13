@@ -44,7 +44,7 @@
 		<itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
 		<itunes:keywords>{{ site.keywords }}</itunes:keywords>
 		<itunes:owner>
-			<itunes:name>{{ site.author }}</itunes:name>
+			<itunes:name>{{ site.owner }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:image href="{{ site.image }}" />
@@ -57,7 +57,7 @@
 		<itunes:category text="Technology">
 			<itunes:category text="Software How-To" />
 		</itunes:category>
-		<itunes:explicit>clean</itunes:explicit>
+		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
 
 		{% for post in site.posts %}
 			<item>
