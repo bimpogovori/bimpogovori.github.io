@@ -46,14 +46,14 @@
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:image href="{{ site.image }}" />
-		<itunes:category text="Business">
-			<itunes:category text="Business News" />
-		</itunes:category>
 		<itunes:category text="Technology">
 			<itunes:category text="Podcasting" />
 		</itunes:category>
 		<itunes:category text="Technology">
 			<itunes:category text="Software How-To" />
+		</itunes:category>
+		<itunes:category text="Business">
+			<itunes:category text="Business News" />
 		</itunes:category>
 		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
 
