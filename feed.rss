@@ -22,10 +22,8 @@
 		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
 		<image>
 			<title>{{ site.title }}</title>
-			<url>{{ site.smallimage }}</url>
+			<url>{{ site.image }}</url>
 			<link>{{ site.url }}</link>
-			<width>{{site.smallimagesize}}</width>
-			<height>{{site.smallimagesize}}</height>
 		</image>
 
 		<managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
