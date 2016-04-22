@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+
+<div class="container m-b">
+	<div class="section">
+
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 m-b">
+				<div id="chart_programi"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 col-xs-6 m-b">
+				<div id="chart_m"></div>
+			</div>
+			<div class="col-sm-6 col-xs-6 m-b">
+				<div id="chart_openbim"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load('visualization', '1', {packages: ['corechart', 'bar']});
+google.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data_programi = new google.visualization.DataTable();
+      data_programi.addColumn('string', 'Program');
+      data_programi.addColumn('number', 'Število glasov')
+
+      data_programi.addRows([
+        ["ArchiCAD", 1],
+        ["Revit", 1],
+        ["AllPlan", 0],
+        ["SketchUp", 0],
+      ]);
+
+      var options_programi = {
+        title: 'Uporaba BIM programov',
+        hAxis: {
+          title: ''
+        },
+        vAxis: {
+          title: ''
+        },
+        legend: {
+          position: 'none'
+        },
+				height: 400,
+        colors: ['#675f9d']
+      };
+
+      var chart_programi = new google.visualization.ColumnChart(document.getElementById('chart_programi'));
+			chart_programi.draw(data_programi, options_programi);
+    }
+</script>
