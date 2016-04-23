@@ -5,6 +5,7 @@ layout: default
 
 <div class="container m-b">
 	<div class="section">
+		<h1>Vprašanja</h1>
 
 		<div class="row">
 			<div class="col-sm-12 col-xs-12 m-b">
@@ -16,6 +17,7 @@ layout: default
 			<div class="col-sm-6 col-xs-6 m-b">
 				<div id="chart_m"></div>
 			</div>
+
 			<div class="col-sm-6 col-xs-6 m-b">
 				<div id="chart_openbim"></div>
 			</div>
@@ -28,35 +30,107 @@ layout: default
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
 google.setOnLoadCallback(drawBasic);
 
+function draw_programi() {
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Program');
+  data.addColumn('number', 'Število glasov')
+
+  data.addRows([
+    ["ArchiCAD", 1],
+    ["Revit", 1],
+    ["AllPlan", 0],
+    ["SketchUp", 0],
+  ]);
+
+  var options = {
+    title: 'Uporaba BIM programov',
+    hAxis: {
+      title: ''
+    },
+    vAxis: {
+      title: ''
+    },
+    legend: {
+      position: 'none'
+    },
+		titleTextStyle: {
+  		fontSize: 12,
+		},
+		height: 300,
+    colors: ['#675f9d']
+  };
+
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart_programi'));
+	chart.draw(data, options);
+}
+
+function draw_m() {
+	var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Model ali proces');
+  data.addColumn('number', 'Število glasov')
+
+  data.addRows([
+    ["Model", 1],
+    ["Proces", 1],
+  ]);
+
+  var options = {
+    title: '"M" kot model ali proces',
+    hAxis: {
+      title: ''
+    },
+    vAxis: {
+      title: ''
+    },
+    legend: {
+      position: 'none'
+    },
+		titleTextStyle: {
+  		fontSize: 12,
+		},
+		height: 300,
+    colors: ['#675f9d']
+  };
+
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart_m'));
+	chart.draw(data, options);
+}
+
+function draw_openbim() {
+	var data = new google.visualization.DataTable();
+  data.addColumn('string', 'OpenBIM');
+  data.addColumn('number', 'Število glasov')
+
+  data.addRows([
+    ["Da", 1],
+		["Ne", 1],
+  ]);
+
+  var options = {
+    title: 'OpenBIM da ali ne',
+    hAxis: {
+      title: ''
+    },
+    vAxis: {
+      title: ''
+    },
+    legend: {
+      position: 'none'
+    },
+		titleTextStyle: {
+  		fontSize: 12,
+		},
+		height: 300,
+    colors: ['#675f9d']
+  };
+
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart_openbim'));
+	chart.draw(data, options);
+}
+
 function drawBasic() {
-
-      var data_programi = new google.visualization.DataTable();
-      data_programi.addColumn('string', 'Program');
-      data_programi.addColumn('number', 'Število glasov')
-
-      data_programi.addRows([
-        ["ArchiCAD", 1],
-        ["Revit", 1],
-        ["AllPlan", 0],
-        ["SketchUp", 0],
-      ]);
-
-      var options_programi = {
-        title: 'Uporaba BIM programov',
-        hAxis: {
-          title: ''
-        },
-        vAxis: {
-          title: ''
-        },
-        legend: {
-          position: 'none'
-        },
-				height: 400,
-        colors: ['#675f9d']
-      };
-
-      var chart_programi = new google.visualization.ColumnChart(document.getElementById('chart_programi'));
-			chart_programi.draw(data_programi, options_programi);
-    }
+	draw_programi()
+	draw_m()
+	draw_openbim()
+}
 </script>
