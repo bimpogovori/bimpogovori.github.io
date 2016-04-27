@@ -9,16 +9,16 @@ layout: default
 	{% for post in paginator.posts %}
 		<div class="section">
 			<div class="row">
-				<div class="col-md-1 col-sm-1 m-b">
+				<div class="col-md-1 col-sm-1 col-xs-1 m-b">
 					<h1>{{ post.number }}</h1>
 				</div>
-				<div class="col-md-11 col-sm-11 m-b">
+				<div class="col-md-11 col-sm-11 col-xs-11 m-b">
 					<h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
 					<p><strong>Objavljeno:</strong> {{ post.date | date: "%d.%m.%Y" }} | <strong>Dolžina:</strong> {{ post.duration }}</p>
 					<p>{{ post.description }}</p>
 
-<!-- 
-					<p>Poslušaj: 					
+<!--
+					<p>Poslušaj:
 						<audio controls>
 							<source src="http://media.matevzdolenc.com/bimpogovori.si/000-BIMpogovori.mp3" type="audio/mpeg">Brskalnik ne podpira audio elementa.
 						</audio>
@@ -28,7 +28,7 @@ layout: default
 			</div>
 		</div>
 	{% endfor %}
-  
+
   {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -56,5 +56,5 @@ layout: default
 {% endif %}
 
 	</div>
-	
+
 </div>
