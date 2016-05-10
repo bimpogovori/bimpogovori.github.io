@@ -14,7 +14,7 @@ layout: default
 				</div>
 				<div class="col-md-11 col-sm-11 m-b">
 					<h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-					<p><strong>Objavljeno:</strong> {{ post.date | date: "%d.%m.%Y" }} | <strong>Dolžina:</strong> {{ post.duration }}</p>
+					<p><strong>Objavljeno:</strong> {{ post.date | date: "%-d.%-m.%Y" }} | <strong>Dolžina:</strong> {{ post.duration }}</p>
 					<p>{{ post.description }}</p>
 
 <!--
