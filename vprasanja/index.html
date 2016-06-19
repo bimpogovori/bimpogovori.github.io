@@ -38,9 +38,7 @@ function draw_programi() {
   data.addRows([
     ["ARHICAD", 4],
 		["Revit", 2],
-		["DDS-CAD", 1],
-    ["AllPlan", 0],
-    ["SketchUp", 0]
+		["DDS-CAD", 1]
   ]);
 
   var options = {
@@ -50,7 +48,8 @@ function draw_programi() {
     },
     vAxis: {
       title: '',
-			baseline: 0
+			baseline: 0,
+			ticks: [1,2,3,4,5,6,7]
     },
     legend: {
       position: 'none'
@@ -83,7 +82,8 @@ function draw_m() {
     },
     vAxis: {
       title: '',
-			baseline: 0
+			baseline: 0,
+			ticks: [1,2,3,4,5,6,7]
     },
     legend: {
       position: 'none'
@@ -116,7 +116,8 @@ function draw_openbim() {
     },
     vAxis: {
       title: '',
-			baseline: 0
+			baseline: 0,
+			ticks: [1,2,3,4,5,6,7]
     },
     legend: {
       position: 'none'
