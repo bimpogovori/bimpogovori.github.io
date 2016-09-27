@@ -40,7 +40,8 @@ function draw_programi() {
 		["Revit", 4],
 		["DDS-CAD", 1],
 		["AutoCAD", 1],
-		["Plateia", 1]
+		["Plateia", 1],
+    ["Civil3D", 1]
   ]);
 
   var options = {
@@ -51,7 +52,7 @@ function draw_programi() {
     vAxis: {
       title: '',
 			baseline: 0,
-			ticks: [1,2,3,4,5,6,7,8,9,10]
+			ticks: [1,2,3,4,5,6,7,8,9,11]
     },
     legend: {
       position: 'none'
@@ -75,7 +76,7 @@ function draw_m() {
   data.addRows([
     ["Model", 2],
     ["Proces", 10],
-    ["Upravljanje", 1],
+    ["Upravljanje", 2],
   ]);
 
   var options = {
@@ -86,7 +87,7 @@ function draw_m() {
     vAxis: {
       title: '',
 			baseline: 0,
-			ticks: [1,2,3,4,5,6,7,8,9,10]
+			ticks: [1,2,3,4,5,6,7,8,9,11]
     },
     legend: {
       position: 'none'
@@ -108,7 +109,7 @@ function draw_openbim() {
   data.addColumn('number', 'Število glasov')
 
   data.addRows([
-    ["Da", 10],
+    ["Da", 11],
 		["Ne", 3]
   ]);
 
