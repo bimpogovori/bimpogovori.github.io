@@ -12,17 +12,16 @@ layout: default
 				</div>
 				<div class="col-md-11 col-sm-11 m-b">
 					<h1>{{ page.title }}</h1>
-					<p>
-						<strong>Objavljeno:</strong> {{ page.date | date: "%-d.%-m.%Y" }} |
-						<strong>Dolžina:</strong> {{ page.duration }}
-					<!--
-								|
-								<strong>Prenesi:</strong> <a href=" {{ page.file }}">mp3</a> -->
-					</p>
+          <p><strong>Objavljeno:</strong> {{ page.date | date: "%-d.%-m.%Y" }}
+            | <strong>Dolžina:</strong> {{ page.duration }}
+            | <strong>Prenesi: </strong> <a href="{{ page.file }}">mp3</a>
+              <br /><strong>Poslušaj: </strong>
+              <audio controls>
+							  <source src="{{ page.file }}" type="audio/mpeg">Brskalnik ne podpira audio elementa.
+						  </audio>
+          </p>
 
-					<p>
-					{{ page.description }}
-					</p>
+					<p>{{ page.description }}</p>
 
 					<!--
 					<p><strong>Poslušaj:</strong>

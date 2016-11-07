@@ -14,16 +14,17 @@ layout: default
 				</div>
 				<div class="col-md-11 col-sm-11 m-b">
 					<h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-					<p><strong>Objavljeno:</strong> {{ post.date | date: "%-d.%-m.%Y" }} | <strong>Dolžina:</strong> {{ post.duration }}</p>
+					<p><strong>Objavljeno:</strong> {{ post.date | date: "%-d.%-m.%Y" }}
+            | <strong>Dolžina:</strong> {{ post.duration }}
+            | <strong>Prenesi: </strong> <a href="{{ post.file }}">mp3</a>
+            <!--
+              | <strong>Poslušaj: </strong>
+              <audio controls>
+  							<source src="{{ post.file }}" type="audio/mpeg">Brskalnik ne podpira audio elementa.
+  						</audio>
+            -->
+          </p>
 					<p>{{ post.description }}</p>
-
-<!--
-					<p>Poslušaj:
-						<audio controls>
-							<source src="http://media.matevzdolenc.com/bimpogovori.si/000-BIMpogovori.mp3" type="audio/mpeg">Brskalnik ne podpira audio elementa.
-						</audio>
-					</p>
- -->
 				</div>
 			</div>
 		</div>
@@ -49,7 +50,7 @@ layout: default
   	{% endfor %}
 
   	{% if paginator.next_page %}
-    	<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li> 
+    	<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   	{% else %}
     	<li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   	{% endif %}
