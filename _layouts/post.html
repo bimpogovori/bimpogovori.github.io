@@ -14,7 +14,8 @@ layout: default
 					<h1>{{ page.title }}</h1>
           <p><strong>Objavljeno:</strong> {{ page.date | date: "%-d.%-m.%Y" }}
             | <strong>Dolžina:</strong> {{ page.duration }}
-            | <strong>Prenesi: </strong> <a href="{{ page.file }}" onclick="ga('send', 'event', 'mp3', 'download', '{{page.number}}');">mp3</a>
+						| <strong>Prenesi: </strong> <a href="{{ page.file }}" onclick="ga('send', 'event', 'mp3', 'download', '{{page.number}}');">mp3</a>
+						| <strong>Predvajaj: </strong> <a href="{{ page.youtube }}" onclick="ga('send', 'event', 'youtube', 'play', '{{page.number}}');">YouTube</a>
               <!--
                 <br /><strong>Poslušaj: </strong>
                 <audio controls>

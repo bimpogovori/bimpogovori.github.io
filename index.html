@@ -16,7 +16,8 @@ layout: default
 					<h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
 					<p><strong>Objavljeno:</strong> {{ post.date | date: "%-d.%-m.%Y" }}
             | <strong>Dolžina:</strong> {{ post.duration }}
-            | <strong>Prenesi: </strong> <a href="{{ post.file }}">mp3</a>
+            | <strong>Prenesi: </strong> <a href="{{ post.file }}" onclick="ga('send', 'event', 'mp3', 'download', '{{post.number}}');">mp3</a>
+            | <strong>Predvajaj: </strong> <a href="{{ post.youtube }}" onclick="ga('send', 'event', 'youtube', 'play', '{{post.number}}');">YouTube</a>
             <!--
               | <strong>Poslušaj: </strong>
               <audio controls>
