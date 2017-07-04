@@ -10,7 +10,7 @@ baseurl: ""
 url: "http://bimpogovori.si"
 feed: "http://feeds.feedburner.com/bimpogovori"
 image: "http://bimpogovori.si/images/itunes-v2.png"
-keywords: informacijsko,modeliranje,zgradb,informacijski,model,bim,komunikacijske,tehnologije 
+keywords: informacijsko,modeliranje,zgradb,informacijski,model,bim,komunikacijske,tehnologije
 explicit: "no"
 copyright: "BIMpogovori.si"
 paginate: 5
@@ -20,4 +20,4 @@ paginate_path: "/a/page:num"
 markdown: kramdown
 permalink: /oddaja/:title
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
