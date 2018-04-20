@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <meta http-equiv="refresh" content="0; url=https://docs.google.com/forms/d/e/1FAIpQLSdksVibNhpgvtPc4D0n895creCEilIe_5u5SWTcfCuOua4qeA/viewform?c=0&w=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="icon" href="favicon.ico">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/toolkit-minimal.css" rel="stylesheet">
+    <link href="/css/application-minimal.css" rel="stylesheet">
+    <link href="/css/bootstrap-horizon.css" rel="stylesheet">
+
+</head>
+
+    <body>
+
+		<div class="jumbotron">
+      <div class="container">
+				<div class="row">
+          <p>V primeru, da niste bili preusmerjeni na spletno stran z anketo, kliknite naslednjo <a href="https://docs.google.com/forms/d/e/1FAIpQLSdksVibNhpgvtPc4D0n895creCEilIe_5u5SWTcfCuOua4qeA/viewform?c=0&w=1">povezavo</a>. Hvala!</p>
+    		</div>
+    	</div>
+    </div>
+
+		<div class="block app-block-footer">
+			<div class="container">
+
+    	{% include footer.html %}
+
+			</div>
+		</div>
+
+    {% include scripts.html %}
+
+    </body>
+</html>
