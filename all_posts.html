@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+	<div class="container m-b">
+		<div class="section">
+
+<table>
+	<th>
+<!-- 		<td>Date</td> -->
+		<td>Number</td>
+		<td>Title</td>
+<!-- 		<td>Keywords</td> -->
+<!-- 		<td>Description</td> -->
+	</th>
+
+ {% for post in site.posts reversed %}
+ <tr>
+<!--  	<td>{{ post.date | date: "%-d.%-m.%Y" }}</td> -->
+ 	<td>{{ post.number }}</td>
+ 	<td>{{ post.title }}</td>
+<!--  	<td>{{ post.keywords }}</td> -->
+<!--  	<td>{{ post.description }}</td> -->
+	</tr>
+{% endfor %}
+</table>
+
+		</div>
+	</div>
+</div>
